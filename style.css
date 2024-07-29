@@ -1,0 +1,131 @@
+*{
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    color: #202840;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+p{
+    font-size: large;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: #577EF2;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#container{
+    background-color: #F2F2F2;
+    width: 40%;
+    height: 50%;
+    border-radius: 3%;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#container #top{
+    /* background-color: #dbdfe9; */
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+    width: 100%;
+}
+#top div{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    justify-content: space-around;
+}
+/* #top div p{
+    
+} */
+#top div :nth-child(2){
+    height: 00%;
+    align-items: center;
+    align-self: flex-end;
+    padding-right: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+}
+#top div :nth-child(2) div{
+    margin-right: 1%;
+}
+#top div :nth-child(2) p{
+    font-family: 'Times New Roman', Times, serif;
+}
+#bar {
+    width: 100%;
+    height: 0;
+    border: solid 0.000000000000001px #dbdfe9;
+
+}
+/*                               footer                     */
+footer{
+width: 100%;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+}
+#left-side div:hover ,#right-side:hover{
+    cursor: pointer;
+    animation-name: ss;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes ss{
+    100%{background-color: #292929;color: #F2F2F2;}
+}
+#left-side{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+}
+#left-side div{
+    border: solid #74C0FC 2px;
+    border-radius: 50%;
+    width: 3vw;
+    height: 3vw;
+    margin-right: 5% ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#right-side{
+    width: 20%;
+    height: 100%;
+    background-color: #74C0FC;
+    border:  solid #202840 1px; 
+}
+/* #right-side::before{
+    content: "";
+    display: block;
+    position: relative;
+    left: -100%;
+    width: 200%;
+    height: 100%;
+    border: solid #000 1px;
+    border-radius: 100%;
+}
+#right-side::after{
+    content: "";
+    display: block;
+    position: relative;
+    right: -1.5vw;
+    width: 200%;
+    height: 100%;
+    border: solid #000 1px;
+    border-radius: 100%;
+} */
