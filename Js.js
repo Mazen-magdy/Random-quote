@@ -2,7 +2,7 @@
 let qu = document.getElementById('qouate')
 let au = document.getElementById('author')
 //  function requestingForAQuoate (){
-function GetAQuate (){fetch("https://type.fit/api/quotes").then((done)=>{
+function GetAQuate (){fetch("https://api.api-ninjas.com/v1/quotes?category=happiness").then((done)=>{
     console.log(done)
     let data = done.json()
     return data
@@ -13,7 +13,10 @@ function GetAQuate (){fetch("https://type.fit/api/quotes").then((done)=>{
     qu.textContent = text;
     let creator = data[r].author;
     au.textContent = creator;
-})}
+}).catch((err) =>{
+    qu.textContent = "An error occured With the request"
+})
+}
 GetAQuate ()
 //        Reapeating the request
 let but = document.getElementById('right-side')
